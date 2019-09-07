@@ -1,1 +1,3 @@
 This is a test file to practice using git
+
+This edit done by Eric
