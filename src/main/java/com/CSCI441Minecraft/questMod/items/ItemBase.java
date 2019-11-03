@@ -2,9 +2,9 @@ package com.CSCI441Minecraft.questMod.items;
 
 import java.util.Random;
 
-import com.suziLe.questRewards.Main;
-import com.suziLe.questRewards.init.ModItems;
-import com.suziLe.questRewards.util.Model;
+import com.CSCI441Minecraft.questMod.Main;
+import com.CSCI441Minecraft.questMod.init.ModItems;
+import com.CSCI441Minecraft.questMod.util.Model;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;

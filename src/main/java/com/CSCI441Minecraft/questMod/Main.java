@@ -1,7 +1,7 @@
 package com.CSCI441Minecraft.questMod;
 
 import com.CSCI441Minecraft.questMod.entity.QuestMaster;
-import com.CSCI441Minecraft.questMod.proxy.*;
+import com.CSCI441Minecraft.questMod.proxy.CommonProxy;
 import com.CSCI441Minecraft.questMod.util.Reference;
 
 import net.minecraftforge.fml.common.Mod;
@@ -24,7 +24,7 @@ public class Main {
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
-		QuestMaster.mainRegistry();
+		
 	}
 	
 	@EventHandler

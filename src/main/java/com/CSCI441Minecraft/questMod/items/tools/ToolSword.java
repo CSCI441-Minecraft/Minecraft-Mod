@@ -2,9 +2,11 @@ package com.CSCI441Minecraft.questMod.items.tools;
 
 import com.CSCI441Minecraft.questMod.Main;
 import com.CSCI441Minecraft.questMod.init.ModItems;
+import com.CSCI441Minecraft.questMod.util.Model;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import com.suziLe.questRewards.util.Model;
+
 import net.minecraft.item.ItemSword;
 
 public class ToolSword extends ItemSword implements Model {
