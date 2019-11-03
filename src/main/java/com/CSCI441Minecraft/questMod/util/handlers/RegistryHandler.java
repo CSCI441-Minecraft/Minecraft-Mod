@@ -34,7 +34,9 @@ public class RegistryHandler
 			}
 		}
 		
+		
 	}
+	
 	
 	// entity entries will not spawn if used in a subscribe event above
 	public static void preInitRegistries() 
