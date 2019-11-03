@@ -8,5 +8,7 @@ public class Reference {
 	public static final String ACCEPTED_VERSIONS = "[1.12.2]";
 	public static final String CLIENT_PROXY_CLASS = "com.CSCI441Minecraft.questMod.proxy.ClienProxy";
 	public static final String COMMON_PROXY_CLASS = "com.CSCI441Minecraft.questMod.proxy.CommonProxy";
+	
+	public static final int ENTITY_QUESTMASTER = 150;
 
 }

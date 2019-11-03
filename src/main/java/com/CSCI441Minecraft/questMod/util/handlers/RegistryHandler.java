@@ -1,5 +1,6 @@
 package com.CSCI441Minecraft.questMod.util.handlers;
 
+import com.CSCI441Minecraft.questMod.init.EntityInit;
 import com.CSCI441Minecraft.questMod.init.ModItems;
 import com.CSCI441Minecraft.questMod.util.Model;
 import net.minecraft.block.Block;
@@ -33,6 +34,13 @@ public class RegistryHandler
 			}
 		}
 		
+	}
+	
+	// entity entries will not spawn if used in a subscribe event above
+	public static void preInitRegistries() 
+	{
+		EntityInit.registerEntities();
+		RenderHandler.registerEntityRenders();
 	}
 	
 	
