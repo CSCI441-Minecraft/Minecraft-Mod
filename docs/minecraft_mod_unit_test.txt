@@ -1,0 +1,63 @@
+CSCI441 Software Engineering
+Minecraft Mod
+Authors: Eric Tallant, Suzi Le, Kyal Long
+language: Java
+
+UNIT TESTING
+------------
+
+Because of the heavy reliance on external libraries and programs in our Minecraft mod, running drivers and stubs is not adequate for testing. In order to test individual parts of the mod, the entire project must be built and imported into Minecraft. From there, so long as the code compiles without an error and does not crash the program during launch, individual objects may be tested.
+
+The following instructions detail how to set up the build the project and set up a testing enviroment in Minecraft throught the command line. 
+
+The following assumptions are made about the tester PC:
+Minecraft v1.12.2 is installed
+Minecraft Forge v1.12.2 is installed and ready for use in Minecraft
+Java 8 is installed 
+command line has gradle support
+
+
+-------------
+
+TEST PROCEDURE
+
+from the command line, navigate to the root path of the project
+
+build the Java project into a .jar file using the following command
+Windows: gradlew build
+Mac: ./gradlew build
+
+run minecraft using the most recent build
+Windows: gradlew runClient
+Mac: ./gradlew runClient
+(if any errors happen here, run ulimit -c unlimited)
+
+Minecraft will launch with the correct version and the mod will be attached. Create a new world in creative mode and start the game
+
+open the items window using "E"
+
+navigate to "search items" in the top right
+
+search the items to test:
+entity.QuestMaster.name
+item.Obsidian_ingot.name
+item.Obisdian_sword.name
+
+add items to inventory
+
+exit window with "esc"
+
+right click on Quest Master egg, it will spawn the entity in front of the user
+
+equip Obsidian Sword, it will attach to the users arm and work similar to other swords
+
+equip Obsidian Ingot, it will attach to the users arm and work similar to other ingots
+
+---------------
+
+RESULTS
+
+Every object works as intended. There are some texture errors. The Quest Master skin color appears as pink instead of the default villager color, and the Obsidian items appear as cubes insead of their intended shape.
+
+
+

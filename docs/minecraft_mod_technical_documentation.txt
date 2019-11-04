@@ -1,0 +1,71 @@
+CSCI441 Software Engineering
+Minecraft Mod
+Authors: Eric Tallant, Suzi Le, Kyal Long
+language: Java
+
+TECHNICAL DOCUMENTATION
+
+----------
+
+INTRODUCTION
+
+This project is a Minecraft questing mod. It is built using Minecraft and Minecraft Forge APIs, which are extracted from net.minecraft and net.minecraftforge, respectively.
+
+Minecraft v1.12.2, Minecraft Forge v1.12.2, and Java 8 is required to run this software. Install and setup documentation can be found at:
+https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html
+https://www.minecraft.net/en-us/
+https://www.java.com/en/download/
+
+
+-----------
+
+PROJECT STRUCTURE
+
+
+Package: com.CSCI441Minecraft.questMod
+
+Project metadata is defined in src/resources/mcmod.info
+
+Project code is stored in src/main/java/com/CSCI441Minecraft. Classes are organized into packages that describe their function, and the mod launches from Main.java
+
+
+------------
+
+TEXTURES
+
+In game objects need a graphical representation, this is called texture in the API. Textures are are stored in src/resources/assets/qr/textures. Objects must reference the png file that holds their specific texture in order to be properly rendered in the game. Each type of object has a method called ResourceLocation that can be found in the Minecraft API under the util.ResourceLocation package
+
+-----------
+
+ITEM CREATION
+
+Items are created using the following method:
+	-Built in <itemname>.java in the items package
+	-Texture is reference in the ModItems.java class
+	-Registering of the item is done in the RegistryHandler.java class
+
+
+ENTITY CREATION
+
+Entities are created using the following method:
+	-Built in a <entityname>.java in the entity package
+	-Texture is referenced in the render package
+	-Rendering of the model is done in RenderHandler.java
+	-Registering of entities is different in v1.12.2. Instead of a @Subscribe event, a  preInitRegistries method is created in RegistryHandler.java. This method must be called in the preInit method of the Main class
+
+------------
+
+BUILDING THE PROJECT
+
+Minecraft forge runs on gradle, the files for which can be found in the gradle folder. When the mod is ready to be built and run in the game, a .jar file must be created and placed in the mod folder of Minecraft.
+
+To build the project, navigate to the root folder of the project in a terminal window and run the command "gradlew build". This creates the mod.jar file and places it in build/libs.
+
+The .jar file can be placed in the folder manually, ready to be added to the mods list after launching the Minecraft application. Alternatively, the command "gradle runClient" can be ran. This will automatically launch Minecraft with the mod attached. This alternate method is preferred when testing the mod.
+
+
+	
+
+
+
+
