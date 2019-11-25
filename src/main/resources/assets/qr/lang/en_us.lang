@@ -1,9 +1,14 @@
 //Items
 
-item.obsidian_ingot.name=ObsidianIngot
+item.obsidian_ingot.name=Obsidian Ingot
 
 
 //Tools
-item.obsidian_sword.name=ObsidianSword
+item.obsidian_sword.name=Obsidian Sword
 
 
+//Armor
+item.obsidian_helmet.name=Obsidian Helmet
+item.obsidian_chestplate.name=Obsidian Chestplate
+item.obsidian_leggings.name=Obsidian Leggings
+item.obsidian_boots.name=Obsidian Boots
