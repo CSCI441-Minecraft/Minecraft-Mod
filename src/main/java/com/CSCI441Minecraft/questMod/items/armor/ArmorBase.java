@@ -1,8 +1,8 @@
 package com.CSCI441Minecraft.questMod.items.armor;
 
 import com.CSCI441Minecraft.questMod.Main;
-import com.CSCI441Minecraft.questMod.ModItems;
-import com.CSCI441Minecraft.questMod.Model;
+import com.CSCI441Minecraft.questMod.init.ModItems;
+import com.CSCI441Minecraft.questMod.util.Model;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
