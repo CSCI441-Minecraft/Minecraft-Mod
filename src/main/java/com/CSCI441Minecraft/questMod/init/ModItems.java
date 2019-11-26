@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.CSCI441Minecraft.questMod.items.ItemBase;
+import com.CSCI441Minecraft.questMod.items.armor.ArmorBase;
 import com.CSCI441Minecraft.questMod.items.tools.ToolSword;
 import com.CSCI441Minecraft.questMod.util.Reference;
 
