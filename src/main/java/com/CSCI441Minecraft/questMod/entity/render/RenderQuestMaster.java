@@ -11,7 +11,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderQuestMaster extends RenderLiving<QuestMaster>{
 	
-	public static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/entity/questmaster.png");
+	//public static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/entity/questmaster.png");
+	public static final ResourceLocation TEXTURES = new ResourceLocation("minecraft:textures/entity/villager/villager.png");
 
 	public RenderQuestMaster(RenderManager manager)
 	{

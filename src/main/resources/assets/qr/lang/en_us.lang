@@ -7,3 +7,7 @@ item.obsidian_ingot.name=ObsidianIngot
 item.obsidian_sword.name=ObsidianSword
 
 
+//Entities
+entity.questmaster.name=QuestMaster
+
+
