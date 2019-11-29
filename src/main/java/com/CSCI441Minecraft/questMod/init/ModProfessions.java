@@ -47,11 +47,24 @@ public class ModProfessions {
 
 		@Override
 		public void addMerchantRecipe(IMerchant merchant, MerchantRecipeList recipeList, Random random) {
-			// TODO Auto-generated method stub
+			int actualPrice = 1;
+
+            if (priceInfo != null)
+            {
+                actualPrice = priceInfo.getPrice(random);
+            }
+
+            ItemStack stackToPay = new ItemStack(Items.EMERALD, actualPrice, 0);
+            recipeList.add(new MerchantRecipe(stackToPay, stack));
 			
 		}
 		
 		
+	}
+
+	public static ModProfessions getId(ModProfessions prof) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

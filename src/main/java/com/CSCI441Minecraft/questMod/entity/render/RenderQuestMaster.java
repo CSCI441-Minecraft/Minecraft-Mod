@@ -11,6 +11,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderQuestMaster extends RenderLiving<QuestMaster>{
 	
+	//location of texture. currently using default villager texture
 	//public static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/entity/questmaster.png");
 	public static final ResourceLocation TEXTURES = new ResourceLocation("minecraft:textures/entity/villager/villager.png");
 

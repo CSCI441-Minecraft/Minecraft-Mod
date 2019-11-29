@@ -49,7 +49,7 @@ public class RegistryHandler
 		registry.register(new VillagerProfession(
 				Reference.MOD_ID+":QuestMaster",
 				"minecraft:textures/entity/villager/villager.png",
-				"minecraft:textures/entity/villager/villager.png"
+				"minecraft:textures/entity/zombie_villager/zombie_villager.png"
 				)
 			);
 	}
