@@ -13,30 +13,37 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.village.MerchantRecipe;
 import net.minecraft.village.MerchantRecipeList;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerCareer;
 import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession;
+import net.minecraftforge.registries.IForgeRegistry;
 
 
 @ObjectHolder(Reference.MOD_ID)
 public class ModProfessions {
 	
 	// create a profession for the quest_npc career
-	public final static VillagerProfession QuestMaster = null;
+	public final static VillagerProfession QuestMasterTrade = null;
 	
 	// declare a new career for the quest master entity
 	public static VillagerCareer quest_npc;
 	
 	
 	public static void associateCareersAndTrades() {
-		quest_npc = (new VillagerCareer(QuestMaster, "quest_npc")).addTrade(1,  new TradeThisForThat());
+		quest_npc = (new VillagerCareer(QuestMasterTrade, "quest_npc")).addTrade(1,  new TradeThisForThat());
 	}
+	
 	
 	public static class TradeThisForThat implements ITradeList {
 		
 		public ItemStack stack;
 		
 		public EntityVillager.PriceInfo priceInfo;
+		
+
 		
 		// creates the trade - currently emeralds for obsidian sword
 		public TradeThisForThat() {
@@ -61,10 +68,7 @@ public class ModProfessions {
 		
 		
 	}
-
-	public static ModProfessions getId(ModProfessions prof) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+	
 	
 }
